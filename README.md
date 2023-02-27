@@ -1,2 +1,2 @@
 # blog_api
-API is for my personal portfolio web. 
+API for my personal portfolio web. 
