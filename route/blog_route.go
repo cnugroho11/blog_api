@@ -18,4 +18,5 @@ func (bc *BlogRouteController) BlogRoute(rg *echo.Group) {
 
 	router.GET("/all", bc.blogController.GetBlog)
 	router.GET("/:slug", bc.blogController.GetBySlug)
+	router.POST("/create", bc.blogController.CreateBlog)
 }

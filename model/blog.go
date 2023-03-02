@@ -11,3 +11,9 @@ type Blog struct {
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
+
+type RequestBlog struct {
+	Title   string `gorm:"type:varchar(255);not null" json:"title"`
+	Slug    string `gorm:"type:varchar(255);not null;unique;" json:"slug"`
+	Content string `gorm:"type:text;not null" json:"content"`
+}
